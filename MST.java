@@ -22,7 +22,7 @@ public class MST
 		Node e = new Node(5);
 		Node f = new Node(6);
 		Node g = new Node(7);
-
+		//building the graph, don't mind this mess :)
 		map.put(a, new ArrayList<Edge>());
 		map.put(b, new ArrayList<Edge>());
 		map.put(c, new ArrayList<Edge>());
@@ -53,8 +53,7 @@ public class MST
 
 	}
 
-	//prims algorithm 
-	
+	//prims algorithm
 	public static int mstVal(Map<Node,ArrayList<Edge>> map)
 	{
 		HashSet<Node> set = new HashSet<Node>();
@@ -93,23 +92,12 @@ public class MST
 			set.add(min.other);
 			index++;	
 		}
-		
-		
-		
-		//int cost = 0; 
-		
-		for(Edge e: edgeSet)
-		{
-			System.out.println("Node in "+e.in.data+" Node out "+e.other.data);
-		}
-		
+
 		return cost; 
 	}
 
 
 }
-
-
 
 class Node
 {
