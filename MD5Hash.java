@@ -2,7 +2,9 @@ import java.util.*;
 import java.security.*; 
 import java.io.*; 
 
-public class MD5Test
+//testing MD5 hash on file contents
+//
+public class MD5Hash
 {
 	public static void main(String[] args) throws NoSuchAlgorithmException
 	{
@@ -16,7 +18,7 @@ public class MD5Test
 			System.out.println(by);
 		}
 
-		File file = new File("inputa.txt");
+		File file = new File("dummyfile.txt");
 		FileInputStream fin = null;
 		System.out.println("---------");
 		try
